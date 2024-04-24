@@ -1,0 +1,505 @@
+.prize_container {
+    position: relative;
+    background-color: #01152b;
+
+
+    .background3 {
+        width: 100%;
+        opacity: 0.05;
+        min-height: 1350px;
+    }
+
+    .prize_wraper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 100px;
+        position: absolute;
+        top: 0;
+
+        .prize_header {
+            h2 {
+                color: #008cfc;
+                font-size: 56px;
+
+                span:last-child {
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+        }
+
+        .prize_body {
+
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                height: auto;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    .prize_body_wraper_left {
+                        position: relative;
+                        width: 440px;
+                        min-height: 770px;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+
+                        &:hover {
+                            background-color: #036aa8;
+                            color: #fff;
+                        }
+
+                        .body_left_header {
+                            padding: 20px 0;
+                            font-size: 33px;
+                            color: #008cfc;
+                            font-weight: 700;
+
+                        }
+
+                        .body_left_prize {
+                            font-size: 50px;
+                            padding: 20px 0;
+                            font-weight: 700;
+
+                            color: #021934;
+
+
+                        }
+
+                        .body_left_opacity {
+                            font-size: 17px;
+                            color: #008cfc;
+                            padding: 20px 0 40px 0;
+                            font-weight: 700;
+
+
+
+                        }
+
+                        .body_left_des {
+                            display: flex;
+                            justify-content: center;
+                            text-align: start;
+                            padding: 0 20px 50px 20px;
+                            font-weight: 700;
+
+                        }
+
+                        .body_left_option {
+                            text-align: start;
+                            padding: 0 20px 35px 20px;
+                            font-weight: 700;
+
+                        }
+
+                        .body_left_item {
+                            text-align: start;
+
+                            ul {
+                                display: flex;
+                                text-align: center;
+                                flex-direction: column;
+
+                                li {
+                                    display: flex;
+                                    padding: 0 20px 10px 20px;
+                                    font-weight: 700;
+
+                                    .left_item_content {
+                                        line-height: 30px;
+                                        padding-left: 10px;
+                                    }
+
+                                }
+                            }
+
+
+                        }
+
+                        .sun {
+                            position: absolute;
+                            top: -3%;
+                            right: -4%;
+
+                            .sys {
+                                position: relative;
+
+                                .sun {
+                                    width: 107px;
+                                    height: 107px;
+
+                                    &:hover {
+                                        animation: rotateAnimation .5s linear;
+                                    }
+
+                                }
+
+
+                                span {
+                                    position: absolute;
+                                    z-index: 999;
+                                    top: 32px;
+                                    left: -88px;
+                                    font-size: 33px;
+                                    color: #fff;
+                                    font-weight: 700;
+
+                                }
+                            }
+
+                            @keyframes rotateAnimation {
+                                from {
+                                    transform: rotate(0deg);
+                                    /* Bắt đầu từ góc 0 độ */
+                                }
+
+                                to {
+                                    transform: rotate(90deg);
+                                    /* Kết thúc ở góc 360 độ */
+                                }
+                            }
+
+                        }
+                    }
+
+                    .prize_body_wraper_right {
+                        width: 440px;
+                        min-height: 770px;
+                        background-color: #01264f;
+                        border-radius: 5px;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: #c5c7c9;
+                            color: #333;
+
+                            .body_left_prize {
+                                color: #008cfc;
+                            }
+                        }
+
+                        .body_left_header {
+                            padding: 20px 0;
+                            font-size: 33px;
+                            color: #008cfc;
+                            font-weight: 700;
+
+                        }
+
+                        .body_left_prize {
+                            font-size: 50px;
+                            padding: 20px 0;
+                            font-weight: 700;
+                            color: #fff;
+
+
+
+                        }
+
+                        .body_left_opacity {
+                            font-size: 17px;
+                            color: #008cfc;
+                            padding: 20px 0 40px 0;
+                            font-weight: 700;
+
+
+
+                        }
+
+                        .body_left_des {
+                            display: flex;
+                            justify-content: center;
+                            text-align: start;
+                            padding: 0 20px 50px 20px;
+                            font-weight: 700;
+
+                        }
+
+                        .body_left_option {
+                            text-align: start;
+                            padding: 0 20px 30px 20px;
+                            font-weight: 700;
+
+                        }
+
+                        .body_left_item {
+                            text-align: start;
+                            display: flex;
+                            flex-direction: column;
+                            display: flex;
+                            padding: 0 20px 10px 20px;
+                            font-weight: 700;
+
+                            .left_item_wraper {
+                                display: flex;
+                                padding-bottom: 10px;
+
+                                .left_item_content {
+                                    line-height: 30px;
+                                    padding-left: 10px;
+
+                                }
+                            }
+
+
+                            .left_item_content_list {
+                                ul {
+                                    display: flex;
+                                    justify-content: start;
+                                    padding-left: 70px;
+                                    margin-bottom: 5px;
+
+                                    li {
+                                        padding-bottom: 10px;
+
+                                    }
+
+                                }
+                            }
+                        }
+
+
+
+                    }
+
+
+                }
+
+            }
+        }
+
+        .prize_footer {
+            padding: 50px 0;
+
+            h2 {
+                span {
+                    font-size: 33px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+
+                span:last-child {
+                    font-size: 56px;
+                    font-weight: 700;
+                    color: #008cfc;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .prize_container {
+        .background3 {
+            min-height: 2500px;
+        }
+
+        .prize_wraper {
+
+            width: 100%;
+
+            .prize_header {
+                h2 {
+                    font-size: 35px;
+                    width: 94%;
+                    padding-left: 3%;
+                    padding-right: 3%;
+
+                }
+            }
+
+            .prize_body {
+                width: 100%;
+
+                ul {
+                    width: 100%;
+
+                    li {
+                        width: 100%;
+                        display: flex;
+                        margin: 0 auto;
+                        justify-content: center;
+
+                        // align-items: center;
+                        .prize_body_wraper_left {
+                            margin-right: 0;
+                            width: 80%;
+
+                            .body_left_header {
+                                font-size: 35px;
+                            }
+
+                            .body_left_prize {
+                                font-size: 40px;
+                            }
+
+                            .body_left_opacity {
+                                font-size: 16px;
+                                
+                            }
+
+                            .body_left_des {
+                                font-size: 14px;
+                            }
+
+                            .body_left_option {
+                                font-size: 14px;
+                            }
+
+                            .body_left_item {
+                                ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    text-align: start;
+                                    width: 100%;
+
+                                    // padding-left: 5%;
+                                    li {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        width: 90%;
+                                        padding: 0;
+                                        text-align: start;
+                                        font-size: 14px;
+
+                                    }
+                                }
+                            }
+                            .sun {
+                                position: absolute;
+                                top: -2%;
+                                right: -5%;
+    
+                                .sys {
+                                    position: relative;
+    
+                                    .sun {
+                                        width: 80px;
+                                        height: 80px;
+    
+                                        &:hover {
+                                            animation: rotateAnimation .5s linear;
+                                        }
+    
+                                    }
+    
+    
+                                    span {
+                                        position: absolute;
+                                        z-index: 999;
+                                        top: 30px;
+                                        left: -55px;
+                                        font-size: 16px;
+                                        color: #fff;
+                                        font-weight: 700;
+    
+                                    }
+                                }
+    
+                                @keyframes rotateAnimation {
+                                    from {
+                                        transform: rotate(0deg);
+                                        /* Bắt đầu từ góc 0 độ */
+                                    }
+    
+                                    to {
+                                        transform: rotate(90deg);
+                                        /* Kết thúc ở góc 360 độ */
+                                    }
+                                }
+    
+                            }
+                        }
+
+                        .prize_body_wraper_right {
+                            margin-right: 0;
+                            width: 80%;
+                            .body_left_header {
+                                font-size: 35px;
+                            }
+
+                            .body_left_prize {
+                                font-size: 40px;
+                            }
+
+                            .body_left_opacity {
+                                font-size: 16px;
+                                
+                            }
+
+                            .body_left_des {
+                                font-size: 14px;
+                            }
+
+                            .body_left_option {
+                                font-size: 14px;
+                            }
+
+                            .body_left_item {
+                                .left_item_wraper{
+                                    font-size: 14px;
+                                }
+                                .left_item_content_list {
+                                    ul {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        text-align: start;
+                                        padding-left: 0;
+
+                                        li {
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            margin: 0;
+                                            text-align: start;
+                                            width: 80%;
+                                            font-size: 14px;
+                                            padding-left: 40px;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .prize_footer {
+                width: 100%;
+
+                h2 {
+                    width: 94%;
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    font-size: 35px;
+                    span:last-child {
+                        font-size: 35px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .prize_container {
+        .background3 {
+            height: 2200px;
+        }
+    }
+}

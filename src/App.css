@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+.app_container {
+  position: relative;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.call_contact {
+  position: fixed;
+  z-index: 999999;
+  bottom: 0;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 56px;
+  background-color: #c7eef5;
+  cursor: pointer;
+  padding: 0 22px 0 18px;
+  margin-bottom: 24px;
+  /* margin-right: 24px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.popup_contact {
+  position: fixed;
+  z-index: 999999;
+  bottom: 0;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.contact_icon {
+  padding-right: 10px;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.fade {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .call_contact {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: #c7eef5;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 24px;
+    border-radius: 50px;
+    /* margin-right: 24px; */
+  }
+
+  .popup_contact {
+    position: fixed;
+    z-index: 999999;
+    bottom: 0;
+    display: flex;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .contact_icon {
+    padding-right: 0;
+  }
+
+  .contact_title {
+    display: none;
+  }
+  .popup_image {
+    height: 100vh;
+    width: 100vw;
+  
+  }
+  
+  .popup_image_content {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #fff;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .call_contact {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: #c7eef5;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 24px;
+    border-radius: 50px;
+    /* margin-right: 24px; */
+  }
+
+  .contact_icon {
+    padding-right: 0;
+  }
+
+  .contact_title {
+    display: none;
+  }
+}
+
+.popup_image {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(85, 85, 85, .75);
+
+}
+
+.popup_image_content {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 60%;
+  height: 95%;
+  background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.imgFull {
+  width: 50%;
+  /* object-fit: cover; */
+  margin: 10px 0 35px 0;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tiltle_img {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.size_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.size_img span{
+  margin: 0 5px;
+  font-size: 14px;
+}
+.size_img span:nth-child(2){
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: #333;
+}
+
+.btn_dowload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  height: 35px;
+  background-color: #01152b;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn_dowload span {
+  color: #fff;
+  font-size: 14px;
+}
+.popup_image_content .x{
+  position: absolute;
+  top:5%;
+  right:5%;
+  cursor: pointer;
 }
